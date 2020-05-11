@@ -1,0 +1,41 @@
+body{
+  background-image:
+    url('https://www.showmetech.com.br/wp-content/uploads/2017/01/outrun_wallpaper__10_-2017-01-25-0516.jpg');
+  background-size: 100vw 100vh;
+  font-family: Arial;
+  height: 100vh;
+  
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.menu{
+  background-color: white;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li{
+  list-style:none;
+}
+
+a{
+  color: teal;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title{
+  
+  color: whitesmoke;
+  text-align:center;
+  
+}
+.site-subtitle{
+  font-style:italic;
+}
