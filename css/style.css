@@ -1,16 +1,20 @@
 body{
-  background-image:
+ 
+}
+
+.bg-image{
+background-image:
     url('https://www.showmetech.com.br/wp-content/uploads/2017/01/outrun_wallpaper__10_-2017-01-25-0516.jpg');
   background-size: 100vw 100vh;
   font-family: Arial;
   height: 100vh;
-  
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+   filter: blur(2px);
+  -webkit-filter: blur(2px);
 }
 
 .menu{
   background-color: white;
+  
 }
 .menu ul{
   display: flex;
@@ -31,11 +35,29 @@ a:hover{
 
 .site-subtitle,
 .site-title{
-  
+  text-shadow: 2px 2px 1px black;
   color: whitesmoke;
   text-align:center;
-  
+  font-family: Helvetica;
 }
 .site-subtitle{
   font-style:italic;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 20px 30px  #000;
+  
 }
