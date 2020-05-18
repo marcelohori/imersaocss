@@ -1,25 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat+Alternates&family=Roboto&family=Anton&family=Sigmar+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c4fcb7670e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Marcelo Hori</title>
 </head>
 <body>
     <header>
-        <nav class="menu"> 
-          <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
+        <nav class="menu" id="menu"> 
+          <ul class="container">
+            <li><a href="#titulo"> <i class="fas fa-home"></i></a></li>
+            <li><a href="#sobre"> <i class="fas fa-address-card"></i> Sobre</a></li>
+            <li><a href="#portfolio"> <i class="fas fa-laptop-code"></i>Portfólio</a></li>
+            <li><a href="#contato"> <i class="fas fa-at"></i>Contato</a></li>
           </ul>
         </nav>
-        <div class="bg-image"></div>
-        <div class="bg-text">
-        <h1 class="site-title">Marcelo H. Hori</h1>
-        <h2 class="site-subtitle">Web Developer</h2>
-    </div>
+        
+        <div class="titulo" id="titulo">
+        <h1 class="site-title">Marcelo Hori</h1>      
+        <!-- <h2 class="site-subtitle">Web Developer</h2> -->
+        </div>
       </header> 
+      <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+        <figure class="img-sobre" >
+           <img src="./img/baby_yakuza.jpg" alt="Hello!">
+        </figure>
+        <p>Meu nome é Marcelo Hitoshi Hori, sou formado em Análise e Desenvolvimento de Sistemas pelo IBTA e MBA em Arquitetura e Desenvolvimento de Sistemas .NET pela FIAP.</p>
+        <p>Trabalho com desenvolvimento Web, comecei programando em asp clássico, passei pelo Flash, Php, até chegar no .net, resumindo era tudo mato. Não existia frontend, backend, existia webmaster. </p>
+        <p>Eu sempre gostei de trabalhar com animação, telas, etc. Mas não sabia desenhar e fazia telas péssimas, estilo design de programador. E assim fui caminhando cada vez mais para o desenvolvimento backend.</p>
+        <p>Ate que um belo dia, eu vi uma propaganda falando de um curso chamado <a href="https://www.alura.com.br/imersao-css" target="_blank"> Imersão CSS da Alura </a>, com as instrutoras Vanessa Tonini e Juliana Amoasei, sensacionais por sinal. Achei a participação do Paulo muito boa também, pois ele tinha as mesmas duvidas que eu na maioria das vezes. Enfim, este site é o resultado desse curso de uma semana. Gostei muito do conteudo, didática e  recomendo 100%. Graças a eles, estou focado em voltar a me dedicar no frontend. Muito obrigado.  </p>
+      </section>
+      <section class="portfolio container" id="portfolio">
+        <h2>Projetos</h2>
+        <div class="grid">
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/frontend.jpg" alt=">Frontend">
+                <figcaption>Frontend</figcaption>
+              </figure>       
+              <div class="card-back">
+                <div class="card-back-text">
+                  <h4>[frontend]</h4>
+                  <p>HTML - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+                  <p>CSS - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                  <p>JS - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i> </p>
+                  <p>ANGULAR - <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                  <p>REACT - <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                </div>
+              </div>
+            </div>
+    </div>
+
+          <div class="flip-card">
+          <div class="card">           
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/backend.jpg" alt="Backend">
+            <figcaption>Backend</figcaption>
+          </figure>      
+          <div class="card-back">
+            <div class="card-back-text">
+            <h4>[backend]</h4>
+            <p>C# - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+            <p>MVC - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+            <p>API - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+            <p>.NET CORE - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+            <p>.NET - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></p>
+          </div>
+          </div>
+        </div>
+      </div>
+
+     
+<div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/mobile.jpg" alt="Mobile">
+            <figcaption>Mobile</figcaption>
+          </figure>
+          <div class="card-back">
+            <div class="card-back-text">
+             <h4>[mobile]</h4>
+             <p>Java - <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+            <p>Xamarin - <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+            <p>REACT NATIVE - <i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+            <p>FLUTTER - <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+          </div>
+        </div>
+</div>
+</div>
+
+        </section>
+        </div>
+       
+      <section class="contato container" id="contato">
+
+        <h2>Contato</h2>
+
+        <div class="grid icons">
+
+          <a target="_blank" href="https://github.com/marcelohori">
+            <i class="fab fa-github-alt"></i>
+          </a>
+
+          <a target="_blank" href="https://twitter.com/marcelohori">
+            <i class="fab fa-twitter"></i>
+          </a>
+
+          <a target="_blank" href="https://linkedin.com/in/marcelohori">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:marcelohori@gmail.com">
+            <i class="far fa-envelope"></i>
+          </a>
+
+          <a href="mailto:horizito@gmail.com">
+          <i class="fab fa-playstation"></i>
+          </a>
+        </div>
+      </section>
+
+
+     
+
 </body>
 </html>
+
+<script>
+  $('a[href^="#"]').on('click', function(event) {
+ var target = $(this.getAttribute('href'));
+ if( target.length ) {
+     event.preventDefault();
+     $('html, body').stop().animate({
+         scrollTop: target.offset().top
+     }, 1000);
+ }
+});
+   </script>
